@@ -1,0 +1,59 @@
+{
+  "login": {
+    "title": "Cluster LMS",
+    "subtitle": "Iniciar Sesión",
+    "email": "Correo electrónico",
+    "password": "Contraseña",
+    "button": "Iniciar Sesión",
+    "error": "Correo o contraseña inválidos. Inténtelo de nuevo."
+  },
+  "gnb": {
+    "logout": "Cerrar Sesión",
+    "goToAdmin": "Ir a la Página de Enuma Admin"
+  },
+  "lnb": {
+    "clusterList": "Lista de Clústeres",
+    "accountManagement": "Gestión de Cuentas",
+    "downloads": "Descargas",
+    "studentDashboard": "Panel de Estudiantes",
+    "schoolDashboard": "Panel de Escuelas",
+    "digitalAssessment": "Evaluación Digital"
+  },
+  "clusterList": {
+    "title": "ENUMA SCHOOL Lista de Clústeres",
+    "allInstitutions": "Todas las Instituciones",
+    "allClusters": "Todos los Clústeres",
+    "allSchools": "Todas las Escuelas",
+    "institution": "Institución",
+    "clusterName": "Nombre del Clúster",
+    "schoolName": "Nombre de la Escuela",
+    "licenseName": "Nombre de Licencia",
+    "licenseIssued": "Licencias Emitidas",
+    "licenseInUse": "Licencias en Uso"
+  },
+  "account": {
+    "title": "Gestión de Cuentas",
+    "create": "Crear una cuenta",
+    "createButton": "+ Crear",
+    "emailPlaceholder": "Ingrese dirección de correo",
+    "emailExists": "Ya existe una cuenta con esta dirección de correo.",
+    "email": "Correo",
+    "rights": "Permisos",
+    "password": "Contraseña",
+    "delete": "Eliminar",
+    "deleteTitle": "Eliminar Cuenta",
+    "deleteConfirm": "¿Está seguro de que desea eliminar esta cuenta?",
+    "cancel": "Cancelar",
+    "enumaAdmin": "Enuma Admin"
+  },
+  "common": {
+    "showingResults": "Mostrando <1>{{count}}</1> resultado(s)",
+    "noData": "No hay datos para mostrar",
+    "row": "Fila {{count}}"
+  },
+  "footer": {
+    "terms": "Términos de Servicio",
+    "privacy": "Política de Privacidad",
+    "learnMore": "Conozca más sobre la familia de productos Enuma en enuma.com"
+  }
+}

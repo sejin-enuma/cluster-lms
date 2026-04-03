@@ -1,0 +1,59 @@
+{
+  "login": {
+    "title": "Cluster LMS",
+    "subtitle": "Log Masuk",
+    "email": "Emel",
+    "password": "Kata Laluan",
+    "button": "Log Masuk",
+    "error": "Emel atau kata laluan tidak sah. Sila cuba lagi."
+  },
+  "gnb": {
+    "logout": "Log Keluar",
+    "goToAdmin": "Pergi ke Halaman Enuma Admin"
+  },
+  "lnb": {
+    "clusterList": "Senarai Kluster",
+    "accountManagement": "Pengurusan Akaun",
+    "downloads": "Muat Turun",
+    "studentDashboard": "Papan Pemuka Pelajar",
+    "schoolDashboard": "Papan Pemuka Sekolah",
+    "digitalAssessment": "Penilaian Digital"
+  },
+  "clusterList": {
+    "title": "ENUMA SCHOOL Senarai Kluster",
+    "allInstitutions": "Semua Institusi",
+    "allClusters": "Semua Kluster",
+    "allSchools": "Semua Sekolah",
+    "institution": "Institusi",
+    "clusterName": "Nama Kluster",
+    "schoolName": "Nama Sekolah",
+    "licenseName": "Nama Lesen",
+    "licenseIssued": "Lesen Dikeluarkan",
+    "licenseInUse": "Lesen Digunakan"
+  },
+  "account": {
+    "title": "Pengurusan Akaun",
+    "create": "Cipta akaun",
+    "createButton": "+ Cipta",
+    "emailPlaceholder": "Masukkan alamat emel",
+    "emailExists": "Akaun dengan alamat emel ini sudah wujud.",
+    "email": "Emel",
+    "rights": "Hak",
+    "password": "Kata Laluan",
+    "delete": "Padam",
+    "deleteTitle": "Padam Akaun",
+    "deleteConfirm": "Adakah anda pasti mahu memadamkan akaun ini?",
+    "cancel": "Batal",
+    "enumaAdmin": "Enuma Admin"
+  },
+  "common": {
+    "showingResults": "Menunjukkan <1>{{count}}</1> hasil",
+    "noData": "Tiada data untuk dipaparkan",
+    "row": "Baris {{count}}"
+  },
+  "footer": {
+    "terms": "Syarat Perkhidmatan",
+    "privacy": "Dasar Privasi",
+    "learnMore": "Ketahui lebih lanjut tentang keluarga produk Enuma di enuma.com"
+  }
+}

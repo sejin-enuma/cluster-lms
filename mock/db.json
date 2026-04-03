@@ -1,0 +1,285 @@
+{
+  "users": [
+    {
+      "id": "u1",
+      "email": "admin@enuma.com",
+      "password": "admin123",
+      "role": "enuma_admin"
+    },
+    {
+      "id": "u2",
+      "email": "admin2@enuma.com",
+      "password": "AB1C",
+      "role": "enuma_admin"
+    },
+    {
+      "id": "u3",
+      "email": "cluster@school.com",
+      "password": "pass123",
+      "role": "cluster_admin",
+      "clusterId": "cl1"
+    }
+  ],
+  "institutions": [
+    {
+      "id": "inst1",
+      "name": "EEI-PT GAG NIKEL"
+    },
+    {
+      "id": "inst2",
+      "name": "Mercy Corps Indonesia"
+    },
+    {
+      "id": "inst3",
+      "name": "UNICEF Malaysia"
+    },
+    {
+      "id": "inst4",
+      "name": "World Vision Philippines"
+    },
+    {
+      "id": "inst5",
+      "name": "Save the Children"
+    }
+  ],
+  "clusters": [
+    {
+      "id": "cl1",
+      "name": "Papua Barat Cluster",
+      "institutionId": "inst1",
+      "institutionName": "EEI-PT GAG NIKEL"
+    },
+    {
+      "id": "cl2",
+      "name": "Sulawesi Cluster",
+      "institutionId": "inst1",
+      "institutionName": "EEI-PT GAG NIKEL"
+    },
+    {
+      "id": "cl3",
+      "name": "Jakarta Cluster",
+      "institutionId": "inst2",
+      "institutionName": "Mercy Corps Indonesia"
+    },
+    {
+      "id": "cl4",
+      "name": "Sabah Cluster",
+      "institutionId": "inst3",
+      "institutionName": "UNICEF Malaysia"
+    },
+    {
+      "id": "cl5",
+      "name": "Sarawak Cluster",
+      "institutionId": "inst3",
+      "institutionName": "UNICEF Malaysia"
+    },
+    {
+      "id": "cl6",
+      "name": "Mindanao Cluster",
+      "institutionId": "inst4",
+      "institutionName": "World Vision Philippines"
+    },
+    {
+      "id": "cl7",
+      "name": "Luzon Cluster",
+      "institutionId": "inst4",
+      "institutionName": "World Vision Philippines"
+    },
+    {
+      "id": "cl8",
+      "name": "Central Africa Cluster",
+      "institutionId": "inst5",
+      "institutionName": "Save the Children"
+    }
+  ],
+  "schools": [
+    {
+      "id": "s1",
+      "name": "SMP KATOLIK SANTA MARIA TAMBRAUW",
+      "clusterId": "cl1",
+      "clusterName": "Papua Barat Cluster",
+      "institutionId": "inst1",
+      "institutionName": "EEI-PT GAG NIKEL",
+      "licenseName": "Enuma School Basic",
+      "licenseIssued": 260,
+      "licenseInUse": 230
+    },
+    {
+      "id": "s2",
+      "name": "SD INPRES FAFANLAP",
+      "clusterId": "cl1",
+      "clusterName": "Papua Barat Cluster",
+      "institutionId": "inst1",
+      "institutionName": "EEI-PT GAG NIKEL",
+      "licenseName": "Enuma School Basic",
+      "licenseIssued": 180,
+      "licenseInUse": 150
+    },
+    {
+      "id": "s3",
+      "name": "SD NEGERI 1 SORONG",
+      "clusterId": "cl1",
+      "clusterName": "Papua Barat Cluster",
+      "institutionId": "inst1",
+      "institutionName": "EEI-PT GAG NIKEL",
+      "licenseName": "Enuma School Plus",
+      "licenseIssued": 300,
+      "licenseInUse": 275
+    },
+    {
+      "id": "s4",
+      "name": "SMP NEGERI 2 MANOKWARI",
+      "clusterId": "cl2",
+      "clusterName": "Sulawesi Cluster",
+      "institutionId": "inst1",
+      "institutionName": "EEI-PT GAG NIKEL",
+      "licenseName": "Enuma School Basic",
+      "licenseIssued": 200,
+      "licenseInUse": 180
+    },
+    {
+      "id": "s5",
+      "name": "SD NEGERI KENDARI",
+      "clusterId": "cl2",
+      "clusterName": "Sulawesi Cluster",
+      "institutionId": "inst1",
+      "institutionName": "EEI-PT GAG NIKEL",
+      "licenseName": "Enuma School Plus",
+      "licenseIssued": 150,
+      "licenseInUse": 120
+    },
+    {
+      "id": "s6",
+      "name": "SMP AL-AZHAR JAKARTA",
+      "clusterId": "cl3",
+      "clusterName": "Jakarta Cluster",
+      "institutionId": "inst2",
+      "institutionName": "Mercy Corps Indonesia",
+      "licenseName": "Enuma School Premium",
+      "licenseIssued": 500,
+      "licenseInUse": 480
+    },
+    {
+      "id": "s7",
+      "name": "SD MENTARI PAGI",
+      "clusterId": "cl3",
+      "clusterName": "Jakarta Cluster",
+      "institutionId": "inst2",
+      "institutionName": "Mercy Corps Indonesia",
+      "licenseName": "Enuma School Basic",
+      "licenseIssued": 120,
+      "licenseInUse": 100
+    },
+    {
+      "id": "s8",
+      "name": "SK KOTA KINABALU",
+      "clusterId": "cl4",
+      "clusterName": "Sabah Cluster",
+      "institutionId": "inst3",
+      "institutionName": "UNICEF Malaysia",
+      "licenseName": "Enuma School Basic",
+      "licenseIssued": 350,
+      "licenseInUse": 310
+    },
+    {
+      "id": "s9",
+      "name": "SK SANDAKAN",
+      "clusterId": "cl4",
+      "clusterName": "Sabah Cluster",
+      "institutionId": "inst3",
+      "institutionName": "UNICEF Malaysia",
+      "licenseName": "Enuma School Plus",
+      "licenseIssued": 280,
+      "licenseInUse": 250
+    },
+    {
+      "id": "s10",
+      "name": "SK KUCHING CENTRAL",
+      "clusterId": "cl5",
+      "clusterName": "Sarawak Cluster",
+      "institutionId": "inst3",
+      "institutionName": "UNICEF Malaysia",
+      "licenseName": "Enuma School Basic",
+      "licenseIssued": 200,
+      "licenseInUse": 175
+    },
+    {
+      "id": "s11",
+      "name": "DAVAO ELEMENTARY SCHOOL",
+      "clusterId": "cl6",
+      "clusterName": "Mindanao Cluster",
+      "institutionId": "inst4",
+      "institutionName": "World Vision Philippines",
+      "licenseName": "Enuma School Premium",
+      "licenseIssued": 400,
+      "licenseInUse": 380
+    },
+    {
+      "id": "s12",
+      "name": "ZAMBOANGA CITY SCHOOL",
+      "clusterId": "cl6",
+      "clusterName": "Mindanao Cluster",
+      "institutionId": "inst4",
+      "institutionName": "World Vision Philippines",
+      "licenseName": "Enuma School Basic",
+      "licenseIssued": 220,
+      "licenseInUse": 200
+    },
+    {
+      "id": "s13",
+      "name": "MANILA CENTRAL SCHOOL",
+      "clusterId": "cl7",
+      "clusterName": "Luzon Cluster",
+      "institutionId": "inst4",
+      "institutionName": "World Vision Philippines",
+      "licenseName": "Enuma School Plus",
+      "licenseIssued": 450,
+      "licenseInUse": 420
+    },
+    {
+      "id": "s14",
+      "name": "BANGUI ELEMENTARY",
+      "clusterId": "cl8",
+      "clusterName": "Central Africa Cluster",
+      "institutionId": "inst5",
+      "institutionName": "Save the Children",
+      "licenseName": "Enuma School Basic",
+      "licenseIssued": 100,
+      "licenseInUse": 85
+    },
+    {
+      "id": "s15",
+      "name": "KINSHASA PRIMARY SCHOOL",
+      "clusterId": "cl8",
+      "clusterName": "Central Africa Cluster",
+      "institutionId": "inst5",
+      "institutionName": "Save the Children",
+      "licenseName": "Enuma School Basic",
+      "licenseIssued": 150,
+      "licenseInUse": 130
+    }
+  ],
+  "accounts": [
+    {
+      "id": "a1",
+      "email": "admin@enuma.com",
+      "rights": "Enuma Admin",
+      "password": "AD1M",
+      "deleted": false
+    },
+    {
+      "id": "a2",
+      "email": "admin2@enuma.com",
+      "rights": "Enuma Admin",
+      "password": "AB1C",
+      "deleted": false
+    },
+    {
+      "id": "a1775173169427",
+      "email": "newuser@enuma.com",
+      "rights": "Enuma Admin",
+      "password": "R2KL",
+      "deleted": false
+    }
+  ]
+}

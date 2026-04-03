@@ -1,0 +1,59 @@
+{
+  "login": {
+    "title": "Cluster LMS",
+    "subtitle": "Masuk",
+    "email": "Email",
+    "password": "Kata Sandi",
+    "button": "Masuk",
+    "error": "Email atau kata sandi tidak valid. Silakan coba lagi."
+  },
+  "gnb": {
+    "logout": "Keluar",
+    "goToAdmin": "Ke Halaman Enuma Admin"
+  },
+  "lnb": {
+    "clusterList": "Daftar Kluster",
+    "accountManagement": "Manajemen Akun",
+    "downloads": "Unduhan",
+    "studentDashboard": "Dasbor Siswa",
+    "schoolDashboard": "Dasbor Sekolah",
+    "digitalAssessment": "Penilaian Digital"
+  },
+  "clusterList": {
+    "title": "ENUMA SCHOOL Daftar Kluster",
+    "allInstitutions": "Semua Institusi",
+    "allClusters": "Semua Kluster",
+    "allSchools": "Semua Sekolah",
+    "institution": "Institusi",
+    "clusterName": "Nama Kluster",
+    "schoolName": "Nama Sekolah",
+    "licenseName": "Nama Lisensi",
+    "licenseIssued": "Lisensi Diterbitkan",
+    "licenseInUse": "Lisensi Digunakan"
+  },
+  "account": {
+    "title": "Manajemen Akun",
+    "create": "Buat akun",
+    "createButton": "+ Buat",
+    "emailPlaceholder": "Masukkan alamat email",
+    "emailExists": "Akun dengan alamat email ini sudah ada.",
+    "email": "Email",
+    "rights": "Hak",
+    "password": "Kata Sandi",
+    "delete": "Hapus",
+    "deleteTitle": "Hapus Akun",
+    "deleteConfirm": "Apakah Anda yakin ingin menghapus akun ini?",
+    "cancel": "Batal",
+    "enumaAdmin": "Enuma Admin"
+  },
+  "common": {
+    "showingResults": "Menampilkan <1>{{count}}</1> hasil",
+    "noData": "Tidak ada data untuk ditampilkan",
+    "row": "Baris {{count}}"
+  },
+  "footer": {
+    "terms": "Syarat Layanan",
+    "privacy": "Kebijakan Privasi",
+    "learnMore": "Pelajari lebih lanjut tentang keluarga produk Enuma di enuma.com"
+  }
+}
