@@ -64,12 +64,12 @@ Colors are defined as Tailwind `@theme` variables in `src/index.css`:
 | `/enuma-admin/downloads` | Downloads (placeholder) | Enuma Admin |
 
 ## Mock API Endpoints
-- `POST /api/auth/login` - Login (email: `admin@enuma.com`, password: `admin123`)
+- `POST /api/auth/login` - Login (credentials in `mock/db.json`)
 - `GET /api/enuma-admin/clusters` - All schools data
 - `GET /api/enuma-admin/institutions` - Institution list
 - `GET /api/enuma-admin/clusters-list` - Cluster list for dropdowns
 - `GET /api/enuma-admin/accounts` - Active accounts
-- `POST /api/enuma-admin/accounts` - Create account (auto 4-char password)
+- `POST /api/enuma-admin/accounts` - Create account (auto-generated password)
 - `DELETE /api/enuma-admin/accounts/:id` - Soft delete account
 
 ## Spec Documents

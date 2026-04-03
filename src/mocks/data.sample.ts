@@ -1,7 +1,7 @@
 export const users = [
-  { id: 'u1', email: 'admin@enuma.com', password: 'admin123', role: 'enuma_admin' as const },
-  { id: 'u2', email: 'admin2@enuma.com', password: 'AB1C', role: 'enuma_admin' as const },
-  { id: 'u3', email: 'cluster@school.com', password: 'pass123', role: 'cluster_admin' as const, clusterId: 'cl1' },
+  { id: 'u1', email: 'admin@enuma.com', password: '****', role: 'enuma_admin' as const },
+  { id: 'u2', email: 'admin2@enuma.com', password: '****', role: 'enuma_admin' as const },
+  { id: 'u3', email: 'cluster@school.com', password: '****', role: 'cluster_admin' as const, clusterId: 'cl1' },
 ]
 
 export const institutions = [
@@ -133,6 +133,6 @@ export const schools = [
 ]
 
 export let accounts = [
-  { id: 'a1', email: 'admin@enuma.com', rights: 'Enuma Admin', password: 'AD1M', deleted: false },
-  { id: 'a2', email: 'admin2@enuma.com', rights: 'Enuma Admin', password: 'AB1C', deleted: false },
+  { id: 'a1', email: 'admin@enuma.com', rights: 'Enuma Admin', password: '****', deleted: false },
+  { id: 'a2', email: 'admin2@enuma.com', rights: 'Enuma Admin', password: '****', deleted: false },
 ]

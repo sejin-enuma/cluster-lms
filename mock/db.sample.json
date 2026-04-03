@@ -3,19 +3,19 @@
     {
       "id": "u1",
       "email": "admin@enuma.com",
-      "password": "admin123",
+      "password": "****",
       "role": "enuma_admin"
     },
     {
       "id": "u2",
       "email": "admin2@enuma.com",
-      "password": "AB1C",
+      "password": "****",
       "role": "enuma_admin"
     },
     {
       "id": "u3",
       "email": "cluster@school.com",
-      "password": "pass123",
+      "password": "****",
       "role": "cluster_admin",
       "clusterId": "cl1"
     }
@@ -1237,28 +1237,28 @@
       "id": "a1",
       "email": "admin@enuma.com",
       "rights": "Enuma Admin",
-      "password": "AD1M",
+      "password": "****",
       "deleted": false
     },
     {
       "id": "a2",
       "email": "admin2@enuma.com",
       "rights": "Enuma Admin",
-      "password": "AB1C",
+      "password": "****",
       "deleted": false
     },
     {
       "id": "a1775173169427",
       "email": "newuser@enuma.com",
       "rights": "Enuma Admin",
-      "password": "R2KL",
+      "password": "****",
       "deleted": false
     },
     {
       "id": "a1775182597452",
       "email": "sejin@enuma.com",
       "rights": "Enuma Admin",
-      "password": "ZLLM",
+      "password": "****",
       "deleted": false
     }
   ]
