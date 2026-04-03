@@ -14,15 +14,32 @@ export const handlers = [
   // Login
   http.post('/api/auth/login', async ({ request }) => {
     const body = (await request.json()) as { email: string; password: string }
-    const user = users.find(
-      (u) => u.email === body.email && u.password === body.password,
-    )
-    if (!user) {
-      return HttpResponse.json({ error: 'Invalid credentials' }, { status: 401 })
+
+    // Check users first
+    const user = users.find((u) => u.email === body.email)
+    if (user) {
+      if (user.password !== body.password) {
+        return HttpResponse.json({ error: 'WRONG_PASSWORD' }, { status: 401 })
+      }
+      const token = btoa(JSON.stringify({ userId: user.id, role: user.role }))
+      const { password: _, ...userWithoutPassword } = user
+      return HttpResponse.json({ token, user: userWithoutPassword })
     }
-    const token = btoa(JSON.stringify({ userId: user.id, role: user.role }))
-    const { password: _, ...userWithoutPassword } = user
-    return HttpResponse.json({ token, user: userWithoutPassword })
+
+    // Check accounts (created via Account Management)
+    const account = accounts.find((a) => a.email === body.email && !a.deleted)
+    if (account) {
+      if (account.password !== body.password) {
+        return HttpResponse.json({ error: 'WRONG_PASSWORD' }, { status: 401 })
+      }
+      const token = btoa(JSON.stringify({ userId: account.id, role: 'enuma_admin' }))
+      return HttpResponse.json({
+        token,
+        user: { id: account.id, email: account.email, role: 'enuma_admin', clusterId: null },
+      })
+    }
+
+    return HttpResponse.json({ error: 'USER_NOT_FOUND' }, { status: 401 })
   }),
 
   // Get schools (cluster list)

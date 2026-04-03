@@ -5,7 +5,10 @@
     "email": "Email",
     "password": "Kata Sandi",
     "button": "Masuk",
-    "error": "Email atau kata sandi tidak valid. Silakan coba lagi."
+    "error": "Email atau kata sandi tidak valid. Silakan coba lagi.",
+    "errorNotFound": "Akun tidak ditemukan.",
+    "errorWrongPassword": "Kata sandi tidak cocok.",
+    "errorGeneral": "Tidak dapat masuk. Silakan hubungi administrator."
   },
   "gnb": {
     "logout": "Keluar",

@@ -5,7 +5,10 @@
     "email": "Email",
     "password": "Password",
     "button": "Login",
-    "error": "Invalid email or password. Please try again."
+    "error": "Invalid email or password. Please try again.",
+    "errorNotFound": "Account does not exist.",
+    "errorWrongPassword": "Password does not match.",
+    "errorGeneral": "Unable to log in. Please contact the administrator."
   },
   "gnb": {
     "logout": "Log Out",

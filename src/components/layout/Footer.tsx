@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="h-[113px] bg-bg flex flex-col justify-center px-[68px]">
       <div className="flex items-center gap-[14px] mb-[8px]">
-        <span className="text-[12px] font-bold text-primary-green">enuma</span>
+        <img src={`${import.meta.env.BASE_URL}logo_english.png`} alt="Enuma" style={{ width: 80 }} />
         <span className="text-gray-300">|</span>
         <a
           href="https://enuma.com/terms/"

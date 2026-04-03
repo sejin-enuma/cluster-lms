@@ -16,9 +16,7 @@ export default function LNB() {
     <nav className="w-[104px] min-h-screen bg-white flex flex-col items-center pt-[30px] shrink-0">
       {/* Logo */}
       <div className="w-[80px] h-[41px] mb-[30px] flex items-center justify-center">
-        <span className="text-[11px] font-bold text-primary-green leading-tight text-center">
-          ENUMA<br />SCHOOL
-        </span>
+        <img src={`${import.meta.env.BASE_URL}logo_english.png`} alt="Enuma School" style={{ width: 80 }} />
       </div>
 
       <div className="flex flex-col gap-[20px] w-full px-[12px]">

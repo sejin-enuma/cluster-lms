@@ -23,7 +23,7 @@ describe('LoginPage', () => {
 
   it('renders login form', () => {
     renderWithProviders(<LoginPage />, { route: '/login' })
-    expect(screen.getByText('Cluster LMS')).toBeInTheDocument()
+    expect(screen.getByAltText('Enuma School')).toBeInTheDocument()
     expect(screen.getByPlaceholderText('Email')).toBeInTheDocument()
     expect(screen.getByPlaceholderText('Password')).toBeInTheDocument()
     expect(screen.getByRole('button', { name: 'Login' })).toBeInTheDocument()
@@ -40,8 +40,8 @@ describe('LoginPage', () => {
     expect(mockLogin).toHaveBeenCalledWith('admin@enuma.com', 'admin123')
   })
 
-  it('shows error on login failure', async () => {
-    mockLogin.mockRejectedValue(new Error('fail'))
+  it('shows USER_NOT_FOUND error', async () => {
+    mockLogin.mockRejectedValue({ response: { data: { error: 'USER_NOT_FOUND' } } })
     renderWithProviders(<LoginPage />, { route: '/login' })
 
     await userEvent.type(screen.getByPlaceholderText('Email'), 'bad@test.com')
@@ -49,12 +49,37 @@ describe('LoginPage', () => {
     await userEvent.click(screen.getByRole('button', { name: 'Login' }))
 
     await waitFor(() => {
-      expect(screen.getByText('Invalid email or password. Please try again.')).toBeInTheDocument()
+      expect(screen.getByText('Account does not exist.')).toBeInTheDocument()
+    })
+  })
+
+  it('shows WRONG_PASSWORD error', async () => {
+    mockLogin.mockRejectedValue({ response: { data: { error: 'WRONG_PASSWORD' } } })
+    renderWithProviders(<LoginPage />, { route: '/login' })
+
+    await userEvent.type(screen.getByPlaceholderText('Email'), 'admin@enuma.com')
+    await userEvent.type(screen.getByPlaceholderText('Password'), 'wrong')
+    await userEvent.click(screen.getByRole('button', { name: 'Login' }))
+
+    await waitFor(() => {
+      expect(screen.getByText('Password does not match.')).toBeInTheDocument()
+    })
+  })
+
+  it('shows general error for unknown failures', async () => {
+    mockLogin.mockRejectedValue(new Error('network error'))
+    renderWithProviders(<LoginPage />, { route: '/login' })
+
+    await userEvent.type(screen.getByPlaceholderText('Email'), 'a@b.com')
+    await userEvent.type(screen.getByPlaceholderText('Password'), '123')
+    await userEvent.click(screen.getByRole('button', { name: 'Login' }))
+
+    await waitFor(() => {
+      expect(screen.getByText('Unable to log in. Please contact the administrator.')).toBeInTheDocument()
     })
   })
 
   it('shows loading state during login', async () => {
-    // Make login hang
     mockLogin.mockReturnValue(new Promise(() => {}))
     renderWithProviders(<LoginPage />, { route: '/login' })
 

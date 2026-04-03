@@ -59,15 +59,34 @@ const server = createServer(async (req, res) => {
   // POST /api/auth/login
   if (req.method === 'POST' && path === '/api/auth/login') {
     const body = await parseBody(req);
-    const user = db.users.find((u) => u.email === body.email && u.password === body.password);
-    if (!user) {
-      return json(res, 401, { error: 'Invalid credentials' });
+
+    // Check users table first
+    const user = db.users.find((u) => u.email === body.email);
+    if (user) {
+      if (user.password !== body.password) {
+        return json(res, 401, { error: 'WRONG_PASSWORD' });
+      }
+      const token = Buffer.from(JSON.stringify({ id: user.id, role: user.role })).toString('base64');
+      return json(res, 200, {
+        token,
+        user: { id: user.id, email: user.email, role: user.role, clusterId: user.clusterId || null },
+      });
     }
-    const token = Buffer.from(JSON.stringify({ id: user.id, role: user.role })).toString('base64');
-    return json(res, 200, {
-      token,
-      user: { id: user.id, email: user.email, role: user.role, clusterId: user.clusterId || null },
-    });
+
+    // Check accounts table (created via Account Management)
+    const account = db.accounts.find((a) => a.email === body.email && !a.deleted);
+    if (account) {
+      if (account.password !== body.password) {
+        return json(res, 401, { error: 'WRONG_PASSWORD' });
+      }
+      const token = Buffer.from(JSON.stringify({ id: account.id, role: 'enuma_admin' })).toString('base64');
+      return json(res, 200, {
+        token,
+        user: { id: account.id, email: account.email, role: 'enuma_admin', clusterId: null },
+      });
+    }
+
+    return json(res, 401, { error: 'USER_NOT_FOUND' });
   }
 
   // GET /api/enuma-admin/clusters (schools list)

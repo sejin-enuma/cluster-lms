@@ -24,8 +24,15 @@ export default function LoginPage() {
     setLoading(true);
     try {
       await login(email, password);
-    } catch {
-      setError(t('login.error'));
+    } catch (err: any) {
+      const errorCode = err?.response?.data?.error;
+      if (errorCode === 'USER_NOT_FOUND') {
+        setError(t('login.errorNotFound'));
+      } else if (errorCode === 'WRONG_PASSWORD') {
+        setError(t('login.errorWrongPassword'));
+      } else {
+        setError(t('login.errorGeneral'));
+      }
     } finally {
       setLoading(false);
     }
@@ -36,7 +43,7 @@ export default function LoginPage() {
       <div className="w-[400px] bg-white rounded-[8px] shadow-lg p-[40px]">
         {/* Logo */}
         <div className="flex items-center justify-center mb-[8px]">
-          <span className="text-[16px] font-bold text-primary-green">ENUMA SCHOOL</span>
+          <img src={`${import.meta.env.BASE_URL}logo_english.png`} alt="Enuma School" style={{ width: 80 }} />
         </div>
 
         {/* Title */}

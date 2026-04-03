@@ -5,7 +5,10 @@
     "email": "Correo electrónico",
     "password": "Contraseña",
     "button": "Iniciar Sesión",
-    "error": "Correo o contraseña inválidos. Inténtelo de nuevo."
+    "error": "Correo o contraseña inválidos. Inténtelo de nuevo.",
+    "errorNotFound": "La cuenta no existe.",
+    "errorWrongPassword": "La contraseña no coincide.",
+    "errorGeneral": "No se puede iniciar sesión. Contacte al administrador."
   },
   "gnb": {
     "logout": "Cerrar Sesión",

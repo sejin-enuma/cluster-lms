@@ -5,7 +5,10 @@
     "email": "Emel",
     "password": "Kata Laluan",
     "button": "Log Masuk",
-    "error": "Emel atau kata laluan tidak sah. Sila cuba lagi."
+    "error": "Emel atau kata laluan tidak sah. Sila cuba lagi.",
+    "errorNotFound": "Akaun tidak wujud.",
+    "errorWrongPassword": "Kata laluan tidak sepadan.",
+    "errorGeneral": "Tidak dapat log masuk. Sila hubungi pentadbir."
   },
   "gnb": {
     "logout": "Log Keluar",
